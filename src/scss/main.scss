@@ -1,0 +1,21 @@
+// Default variable overrides
+// 부트스트랩에서 사용되는 테마를 내가 원하는 방식으로
+// 재정의 해주고 싶을때 윗 부분에서 재정의를 해주어야 적용이 된다.
+// ※ 정의를 안해주는 요소를 가져올시 애러가 발생한다.
+$primary: #FDC000;
+$container-max-widths: (
+  sm: 540px,
+  md: 704px,
+  lg: 924px,
+  xl: 1140px,
+  xxl: 1364px
+);
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
